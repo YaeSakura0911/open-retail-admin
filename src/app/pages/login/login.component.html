@@ -1,0 +1,45 @@
+<div class="w-screen h-screen flex flex-col">
+    <header class="h-16 shadow"></header>
+    <div class="h-full container mx-auto relative" style="background: url('../../../assets/background.jpg') no-repeat; background-size: cover;">
+        <div class="w-80 p-8 bg-white rounded-md shadow-md absolute top-64 right-36">
+            <form [formGroup]="loginForm" (ngSubmit)="(handleLogin)">
+                <label class="block mb-8">
+                    <input
+                        placeholder="用户名"
+                        class="block w-full h-10 rounded-md border-gray-300 outline-none shadow-sm transition-all duration-300 hover:border-emerald-300 focus:border-emerald-300 focus:ring focus:ring-emerald-200 focus:ring-opacity-50"
+                    />
+                </label>
+                <label class="block mb-8">
+                    <input
+                        type="password"
+                        placeholder="密码"
+                        class="block w-full h-10 rounded-md border-gray-300 outline-none shadow-sm transition-all duration-300 hover:border-emerald-300 focus:border-emerald-300 focus:ring focus:ring-emerald-200 focus:ring-opacity-50"
+                    />
+                </label>
+                <div class="mb-8">
+                    <label
+                        class="inline-flex items-center hover:cursor-pointer"
+                    >
+                        <input
+                            type="checkbox"
+                            class="rounded border-gray-300 text-emerald-500 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:cursor-pointer focus:border-emerald-300 focus:ring focus:ring-offset-0 focus:ring-emerald-200 focus:ring-opacity-50"
+                        />
+                        <span class="ml-2">记住我</span>
+                    </label>
+
+                    <span class="float-right">
+                        <a routerLink="/forgot" class="transition duration-300 hover:text-emerald-500">忘记密码</a>
+                    </span>
+                </div>
+
+                <button
+                    type="submit"
+                    class="block w-full h-10 bg-emerald-500 text-white tracking-widest rounded-md transition-all duration-300 hover:bg-emerald-500/80"
+                >
+                    登录
+                </button>
+            </form>
+        </div>
+    </div>
+    <footer class="h-16 text-center text-gray-400 align-middle">YaeSakura © 2024</footer>
+</div>
