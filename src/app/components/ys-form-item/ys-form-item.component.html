@@ -1,0 +1,14 @@
+<div class="relative flex">
+    <div class="absolute left-2 top-2.5 z-10 size-5 text-gray-500">
+        <ng-content select="[ysInputPrefix]"></ng-content>
+    </div>
+    <div class="w-full">
+        <ng-content></ng-content>
+    </div>
+    <div class="absolute right-2 top-2.5 z-10 size-5 text-gray-500">
+        <ng-content select="[ysInputSuffix]"></ng-content>
+    </div>
+</div>
+<div class="h-10 leading-10 text-red-500">
+    <ng-content select="span"></ng-content>
+</div>
